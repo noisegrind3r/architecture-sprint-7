@@ -1,0 +1,27 @@
+@startuml
+title PropDevelopment Context Diagram
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Person(user, "User", "Собственник")
+
+Container(MobileApp, "Mobile App", "Мобильное приложение для собственников")
+
+Container(TenantBackendApp, "Tenant Backend System", "Система для собственников")
+
+System_Ext(partner, "Partner System", "Партнерская система умного дома")
+
+System_Ext(intercom, "Smart Intercom", "Интеллектуальный домофон")
+System_Ext(gate, "Smart Gate", "Интеллектуальный шлагбаум")
+
+Rel(user, MobileApp, "Использует систему")
+Rel(MobileApp, TenantBackendApp, "Обработка запросов")
+
+Rel(TenantBackendApp, partner, "Обработка запросов")
+
+Rel(partner, intercom, "Команды для устройств")
+Rel(partner, gate, "Команды для устройств")
+
+@enduml
