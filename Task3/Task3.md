@@ -1,9 +1,11 @@
 Задание 3. Внешние интеграции
 
  - Диаграмма контекста в модели С4.  [Ссылка на схему](https://github.com/noisegrind3r/architecture-sprint-7/blob/sprint_7/Task3/context.png)
+   
    Исходный файл [Ссылка на схему](https://github.com/noisegrind3r/architecture-sprint-7/blob/sprint_7/Task3/context.puml)
 
  - Диаграмма контейнеров PropDevelopment. [Ссылка на схему](https://github.com/noisegrind3r/architecture-sprint-7/blob/sprint_7/Task3/PropDevelopment_С4_model.drawio.png)
+   
    Исходный файл [Ссылка на схему](https://github.com/noisegrind3r/architecture-sprint-7/blob/sprint_7/Task3/PropDevelopment_С4_model.drawio.xml)
 
  - Требования к безопасности:

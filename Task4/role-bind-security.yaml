@@ -1,0 +1,14 @@
+# role-bind-security.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: role-bind-security
+  namespace: secure-space
+subjects:
+- kind: User
+  name: security
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: role-security
+  apiGroup: rbac.authorization.k8s.io 
