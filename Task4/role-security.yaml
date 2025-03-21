@@ -1,0 +1,10 @@
+# role-security.yaml - роль для специалиста по ИБ, которая может просматривать секреты
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: secure-space
+  name: role-security
+rules:
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["get", "list"] 
